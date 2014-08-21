@@ -35,9 +35,9 @@ This Clojure library was designed to provide APIs for the third part application
     (-> (weibo-wrap-api {:method :post
                           :api-version 2
                           :api-group :statuses
-                          :api-key :update.json
+                          :api-key :update
                           :data {:status
-                                 (url-encode "Sent from Clojure Weibo API from Xiang Wang !") }}
+                                (url-encode "Sent from Clojure Weibo API from Xiang Wang !") }}
                         my-weibo-config)
         (get "text"))
 ```
