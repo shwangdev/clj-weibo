@@ -9,7 +9,7 @@ This Clojure library was designed to provide APIs for the third part application
 
 ## Usage
 
----
+```clojure
     (use '[clj-weibo core oauth2)
     (def my-weibo-config (merge weibo-default-config
                                 {:client-id "Your App ID"
@@ -39,8 +39,8 @@ This Clojure library was designed to provide APIs for the third part application
                           :data {:status
                                     (url-encode "Sent from Clojure Weibo API from Xiang Wang !") }} my-weibo-config)
         (get "text"))
+```
 
----
 
 ## License
 
