@@ -37,14 +37,15 @@ This Clojure library was designed to provide APIs for the third part application
                           :api-group :statuses
                           :api-key :update.json
                           :data {:status
-                                    (url-encode "Sent from Clojure Weibo API from Xiang Wang !") }} my-weibo-config)
+                                 (url-encode "Sent from Clojure Weibo API from Xiang Wang !") }}
+                        my-weibo-config)
         (get "text"))
 ```
 
 
 ## License
 
-Copyright © 2014 FIXME
+Copyright © 2014
 
 Distributed under the Eclipse Public License either version 1.0 or (at
 your option) any later version.
