@@ -30,7 +30,7 @@ This Clojure library was designed to provide APIs for the third part application
                      :api-key :public_timeline
                      :data {:count 10}} my-weibo-config)
 
-    ;; Another example
+    ;; Another examples
 
     (-> (weibo-wrap-api {:method :post
                           :api-version 2
@@ -40,6 +40,14 @@ This Clojure library was designed to provide APIs for the third part application
                                 (url-encode "Sent from Clojure Weibo API from Xiang Wang !") }}
                         my-weibo-config)
         (get "text"))
+
+    (weibo-wrap-api {:method :get
+                     :api-version 2
+                     :api-group nil
+                     :api-key :favorites
+                     :data {:count 1 :page 1}} my-weibo-config)
+
+
 ```
 
 
